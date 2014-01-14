@@ -39,7 +39,7 @@
 		<div class="jumbotron">
 			<h1>Welcome!!2!</h1>
 			<p>You have successfully installed the FuelPHP Framework.111111</p>
-                        <p>You have successfully installed the FuelPHP Framework.222222</p>
+                        <p>You have successfully installed the FuelPHP Framework. Ivara zars</p>
 			<p><a class="btn btn-primary btn-lg" href="http://docs.fuelphp.com">Read the Docs</a></p>
 		</div>
 		<div class="row">
