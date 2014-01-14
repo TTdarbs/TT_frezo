@@ -39,12 +39,12 @@
 		<div class="jumbotron">
 			<h1>Welcome!!2!</h1>
 			<p>You have successfully installed the FuelPHP Framework.111111</p>
-                        <p>You have successfully installed the FuelPHP Framework.222222 pamainīts </p>
+                        <p>You have successfully installed the FuelPHP Framework.12345678 pamainīts </p>
 			<p><a class="btn btn-primary btn-lg" href="http://docs.fuelphp.com">Read the Docs</a></p>
 		</div>
 		<div class="row">
 			<div class="col-md-4">
-				<h2>Get Started</h2>
+				<h2>Get Started1</h2>
 				<p>The controller generating this page is found at <code>APPPATH/classes/controller/welcome.php</code>.</p>
 				<p>This view can be found at <code>APPPATH/views/welcome/index.php</code>.</p>
 				<p>You can modify these files to get your application started quickly.</p>
