@@ -44,6 +44,7 @@
 		</div>
 		<div class="row">
 			<div class="col-md-4">
+                            <h2>kkas jauns un nobīde</h2>
 				<h2>Get Started4mainits</h2>
 				<p>The controller generating this page is found at <code>APPPATH/classes/controller/welcome.php</code>.</p>
 				<p>This view can be found at <code>APPPATH/views/welcome/index.php</code>.</p>
