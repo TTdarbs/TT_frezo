@@ -31,7 +31,7 @@ class Controller_Login extends Controller_Template
 		$this->template->content = View::forge('login/login', $data);
 	}
 
-	public function action_logut()  // izlogojas un pārmet uz galveno lapu
+	public function action_logout()  // izlogojas un pārmet uz galveno lapu
 	{
             $auth = Auth::instance();
             $auth->logout();
