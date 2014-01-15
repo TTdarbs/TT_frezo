@@ -28,7 +28,17 @@ class Controller_News extends Controller_Template{
 	{
 		if (Input::method() == 'POST')
 		{
-			$val = Model_News::validate('create');
+                    $config = array( // atļautie tipi un bilžu atrašanās vieta
+                        'path' => DOCROOT.'assets/img/news',
+                        'randomize' => true,
+                        'ext_whitelist' => array('img', 'jpg', 'jpeg', 'gif', 'png'),
+                    );
+                    Upload::process($config); // ielādējam iepriekšo configu
+                    if(Upload::is_valid()) { // pārbaudam vai ir derīga
+                        Upload::save(); // ja der, saglabājam un pārbaudam formu
+                        $files = Upload::get_files(); // iegūstam faila saturu saitei uz to
+                        #$files[0]['saved_to'].$files[0]['saved_as'] 
+                        $val = Model_News::validate('create');
 			
 			if ($val->run())
 			{
@@ -37,6 +47,7 @@ class Controller_News extends Controller_Template{
 					'summary' => Input::post('summary'),
 					'message' => Input::post('message'),
 					'author_id' => Input::post('author_id'),
+                                        'image' => ($files[0]['saved_as']),
 				));
 
 				if ($news and $news->save())
@@ -55,7 +66,16 @@ class Controller_News extends Controller_Template{
 			{
 				Session::set_flash('error', $val->error());
 			}
+                             
+                        
+                    }else{
+                        Session::set_flash('error', 'Attēls nav derīgs');
+                    };
+                    
+			
 		}
+                
+
 
 		$this->template->title = "News";
 		$this->template->content = View::forge('news/create');

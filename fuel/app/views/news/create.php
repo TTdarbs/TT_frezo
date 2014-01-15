@@ -1,4 +1,4 @@
-<h2>New <span class='muted'>News</span></h2>
+<h2>Pievienot <span class='muted'>jaunumu</span></h2>
 <br>
 
 <?php echo render('news/_form'); ?>

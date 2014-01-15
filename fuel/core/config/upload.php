@@ -35,7 +35,7 @@ return array(
 	'max_size'			=> 0,
 
 	// list of file extensions that a user is allowed to upload
-	'ext_whitelist'		=> array(),
+	'ext_whitelist'		=> array('img', 'jpg', 'jpeg', 'gif', 'png'),
 
 	// list of file extensions that a user is NOT allowed to upload
 	'ext_blacklist'		=> array(),
@@ -67,7 +67,7 @@ return array(
 	'extension'			=> '',
 
 	// default path the uploaded files will be saved to
-	'path'				=> '',
+	'path'				=> DOCROOT.'files',
 
 	// create the path if it doesn't exist
 	'create_path'		=> true,
@@ -85,7 +85,7 @@ return array(
 	'overwrite'			=> false,
 
 	// if true, generate a random filename for the file being saved
-	'randomize'			=> false,
+	'randomize'			=> true,
 
 	// if true, normalize the filename (convert to ASCII, replace spaces by underscores)
 	'normalize'			=> false,

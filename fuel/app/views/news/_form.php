@@ -1,4 +1,5 @@
-<?php echo Form::open(array("class"=>"form-horizontal")); ?>
+<?php echo Form::open(array("class"=>"form-horizontal",
+                            'enctype' => 'multipart/form-data')); ?>
 
 	<fieldset>
 		<div class="form-group">
@@ -24,6 +25,14 @@
 
 				<?php echo Form::input('author_id', Input::post('author_id', isset($news) ? $news->author_id : ''), array('class' => 'col-md-4 form-control', 'placeholder'=>'Author id')); ?>
 
+		</div>
+                <div class="form-group">
+			<?php echo Form::label('Upload image', 'image', array('class'=>'control-label')); ?>
+                                
+				 <?php
+                                        echo Form::file('filename'); 
+                                        #echo Form::submit('submit');
+                                        echo Form::close(); ?>
 		</div>
 		<div class="form-group">
 			<label class='control-label'>&nbsp;</label>

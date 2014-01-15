@@ -13,7 +13,7 @@
 	</thead>
 	<tbody>
 <?php foreach ($news as $item): ?>		<tr>
-
+                        <img src="/assets/img/news/<?php echo $item->image; ?>" alt="teksts">
 			<td><?php echo $item->name; ?></td>
 			<td><?php echo $item->summary; ?></td>
 			<td><?php echo $item->message; ?></td>

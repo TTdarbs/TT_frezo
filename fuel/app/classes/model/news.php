@@ -11,6 +11,7 @@ class Model_News extends Model
 		'author_id',
 		'created_at',
 		'updated_at',
+                'image',
 	);
 
 	protected static $_observers = array(
@@ -38,6 +39,7 @@ class Model_News extends Model
 		$val->add_field('summary', 'Summary', 'required');
 		$val->add_field('message', 'Message', 'required');
 		$val->add_field('author_id', 'Author Id', 'required|valid_string[numeric]');
+                
 
 		return $val;
 	}
