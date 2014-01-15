@@ -14,6 +14,15 @@ class Model_User extends \Orm\Model
 		'created_at',
 		'updated_at',
 	);
+        
+        protected static $_has_many = array( // katram lietotājam vairākas ziņas
+            'news' => array(
+                'key_from' => 'id',
+                'model_to' => 'Model_News',
+                'key_to' => 'author_id',
+                'cascade_save' => true,
+                'cascade_delete' => false),
+    );
 
 	protected static $_observers = array(
 		'Orm\Observer_CreatedAt' => array(

@@ -23,7 +23,14 @@ class Model_News extends Model
 			'mysql_timestamp' => false,
 		),
 	);
-
+        
+        protected static $_belongs_to = array( // relācija uz user
+	'user' => array(
+			'key_from' => 'author_id',
+			'model_to' => 'Model_User',
+			'key_to' => 'id')
+        );
+        
 	public static function validate($factory)
 	{
 		$val = Validation::forge($factory);
