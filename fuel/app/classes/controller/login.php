@@ -4,6 +4,7 @@ class Controller_Login extends Controller_Template
 {
         public function action_index()
         {
+            $data["subnav"] = array('login'=> 'active' );
             if (Input::post()) {
                 $auth = Auth::instance();
 
@@ -11,6 +12,7 @@ class Controller_Login extends Controller_Template
                     if ($auth->get_profile_fields("verified", false) == false) {
                         Session::set_flash("error", "Tu neesi apstiprinājis savu e-pastu!");
                     }else{
+                        //Session::set_flash("success", "Jūs esat pieslēdzies sistēmai.");
                         Response::redirect('/') and die();
                     }
                 } else {
@@ -38,44 +40,43 @@ class Controller_Login extends Controller_Template
 
 	public function action_register()
 	{
-            $bool = false;
             if (Input::method() == "POST") {
-                
                 $exist_user = DB::select("id")
                         ->from("users")
-                        ->where("email", "=", Input::post("email"))
+                        ->where("email", "=", Input::post("usermail"))
                         ->execute()
                         ->as_array();
-	    
-                if (count($exist_user) >= 1) { // ja tiek atlasīts vismaz 1 lietotājs izvada kļūdas paziņojumu
-
-                    Session::set_flash("error", "Šāds lietotājvārds jau eksistē!");
-                    $bool = true;
+                $is_err = false;
+                if (count($exist_user) > 0) {
+                    //sorry, the username is taken already :(
+                    Session::set_flash("error", "The username is already taken");
+                    $is_err = true;
                 }
 
                 if (Input::post("password") != Input::post("password_rep")) {
-                    Session::set_flash("error", "Paroles nesakrīt savā starpā!");
-                    $bool = true;
+                    Session::set_flash("error", "Passwords do not match!");
+                    $is_err = true;
                 }
 
-                if ($bool == false) { // ja nav kļūdu, tad reģistrē un piešķir lomu user
-
+                if ($is_err == false) {
+                    //no errors - we can register!
                     $verification_key = md5(mt_rand(0, mt_getrandmax()));
                     $newid = Auth::instance()->create_user(
-                            Input::post("email"), //username = email
+                            Input::post("usermail"), //username = email
                             Input::post("password"),
-                            Input::post("email"),
-                            1, 
+                            Input::post("usermail"),
+                            1, //simple user
                             array("verified" => false,
                                   "verification_key" => $verification_key)
                             );
-                    Session::set_flash("success", "Reģistrācija notika veiksmīgi!\nApstiprini e-pastu!");
-                    $this->action_send_verification_email($newid, Input::post("email"), $verification_key);
+                    Session::set_flash("success", "Registration successful!\nYou still have to verify your e-mail address.");
+                    $this->action_send_verification_email($newid, Input::post("usermail"), $verification_key);
+                    //nothing else to do here
                     Response::redirect("/");
                 }
             }
-            $this->template->title = 'Reģistrācija';
-            $this->template->page_title = "Reģistrācija";
+            $this->template->title = 'Login &raquo; Register';
+            $this->template->page_title = "Become a member";
             $this->template->content = View::forge("login/register");
 	}
 
