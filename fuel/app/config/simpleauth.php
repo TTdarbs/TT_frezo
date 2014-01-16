@@ -36,21 +36,20 @@ return array(
 	 */
 	'roles' => array(
 	    "user" => array(
-			"event"
-			    =>array("create", "read", "update","delete"),
+			"news"
+			    =>array("read"),
+                	"products"
+			    =>array("read"),
                         "comment"
-			    =>array("create", "read", "update","delete"),
-			"country"
-			    =>array("read")),
+			    =>array("create", "read", "update","delete"),),
 	    "admin" => array(
-			"event"
+			"news"
 			    =>array("create", "read", "update","delete"),
                         "comment"
 			    =>array("create", "read", "update","delete", "allrights"),
-			"country"
-			    =>array("create", "update","delete"),
-			"location"
-			    =>array("create", "read", "update","delete"),)
+			"products"
+			    =>array("read","create", "update","delete"),
+                ),
 		/**
 		 * Examples
 		 * ---

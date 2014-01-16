@@ -21,11 +21,13 @@
 
 		</div>
 		<div class="form-group">
-			<?php echo Form::label('Author id', 'author_id', array('class'=>'control-label')); ?>
+			<?php echo Form::hidden('Author id', 'author_id', array('class'=>'control-label')); ?>
 
-				<?php echo Form::input('author_id', Input::post('author_id', isset($news) ? $news->author_id : ''), array('class' => 'col-md-4 form-control', 'placeholder'=>'Author id')); ?>
+				<?php echo Form::hidden('author_id', Input::post('author_id', isset($news) ? $news->author_id : ''), array('class' => 'col-md-4 form-control', 'placeholder'=>'Author id')); ?>
 
 		</div>
+            
+            
                 <div class="form-group">
 			<?php echo Form::label('Upload image', 'image', array('class'=>'control-label')); ?>
                                 

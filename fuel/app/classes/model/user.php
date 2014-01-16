@@ -22,6 +22,12 @@ class Model_User extends \Orm\Model
                 'key_to' => 'author_id',
                 'cascade_save' => true,
                 'cascade_delete' => false),
+            'products' => array(
+                'key_from' => 'id',
+                'model_to' => 'Model_Products',
+                'key_to' => 'author_id',
+                'cascade_save' => true,
+                'cascade_delete' => false),
     );
 
 	protected static $_observers = array(

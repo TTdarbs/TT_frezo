@@ -28,6 +28,7 @@ class Controller_News extends Controller_Template{
 	{
 		if (Input::method() == 'POST')
 		{
+                    $user = \Auth::get_user_id();
                     $config = array( // atļautie tipi un bilžu atrašanās vieta
                         'path' => DOCROOT.'assets/img/news',
                         'randomize' => true,
@@ -46,7 +47,7 @@ class Controller_News extends Controller_Template{
 					'name' => Input::post('name'),
 					'summary' => Input::post('summary'),
 					'message' => Input::post('message'),
-					'author_id' => Input::post('author_id'),
+					'author_id' => ($user[1]),
                                         'image' => ($files[0]['saved_as']),
 				));
 
