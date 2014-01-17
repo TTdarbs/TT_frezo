@@ -356,3 +356,5 @@ WARNING - 2014-01-16 17:55:35 --> Fuel\Core\Fuel::init - The configured locale e
 WARNING - 2014-01-16 17:55:37 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
 WARNING - 2014-01-16 17:55:37 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
 WARNING - 2014-01-16 17:55:39 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-16 18:06:26 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-16 18:06:26 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
