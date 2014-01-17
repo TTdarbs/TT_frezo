@@ -44,7 +44,7 @@ return array(
 			    =>array("create", "read", "update","delete"),),
 	    "admin" => array(
 			"news"
-			    =>array("create", "read", "update","delete"),
+			    =>array("create", "read", "edit","update","delete"),
                         "comment"
 			    =>array("create", "read", "update","delete", "allrights"),
 			"products"

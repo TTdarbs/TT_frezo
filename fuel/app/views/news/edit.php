@@ -1,6 +1,6 @@
 <?php if (Auth::has_access("news.edit")){ ?>
 
-<h2>Editing <span class='muted'>News</span></h2>
+<h2>Rediģēt <span class='muted'>jaunumus</span></h2>
 <br>
 
 <?php echo render('news/_form'); ?>
@@ -9,7 +9,7 @@
 	<?php echo Html::anchor('news/view/'.$news->id, 'View'); ?>
 </p>
 	
-<p> <?php echo Html::anchor('news', 'Back'); ?></p>
+<p> <?php echo Html::anchor('news', 'Atpakaļ'); ?></p>
 
 <?php }else{
         Response::redirect('/');

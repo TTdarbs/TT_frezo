@@ -1,12 +1,12 @@
 <?php if (Auth::has_access("products.create")){ ?>
 
-<h2>New <span class='muted'>Product</span></h2>
+<h2>Jauns <span class='muted'>produkts</span></h2>
 <br>
 
 <?php echo render('products/_form'); ?>
 
-<p><?php echo Html::anchor('products', 'Back'); ?></p>
+<p><?php echo Html::anchor('products', 'Atpakaļ'); ?></p>
 
 <?php }else{
         Response::redirect('/');
-  }  
+}
