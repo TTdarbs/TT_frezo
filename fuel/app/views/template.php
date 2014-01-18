@@ -22,12 +22,13 @@
             if (Auth::instance()->check())
             {
                 $link = array('Logged in as: '.Auth::instance()->get_screen_name(), Html::anchor('login/logout', 'Logout'));
+                echo Html::ul($link);
             }
             else
             {
-                $link = array(Html::anchor('login/index', 'Login'), Html::anchor('login/register', 'Register'));
+                echo render('login/index');
             }
-            echo Html::ul($link);
+            
         }
     ?>
     
