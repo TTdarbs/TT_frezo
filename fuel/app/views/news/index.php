@@ -17,7 +17,8 @@
 			<td><?php echo $item->name; ?></td>
 			<td><?php echo $item->summary; ?></td>
 			<td><?php echo $item->message; ?></td>
-			<td><?php echo $item->author_id; ?></td>
+			<td><?php echo $item->user->email; ?></td>
+                        
 			<td>
 				<div class="btn-toolbar">
 					<div class="btn-group">
@@ -32,7 +33,7 @@
 		</tr>
 <?php endforeach; ?>	</tbody>
 </table>
-<a href="/products/create">asdasas</a>
+<a href="/products/">asdasas</a>
 <?php else: ?>
 <p>No News.</p>
 

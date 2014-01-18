@@ -3,7 +3,10 @@ class Controller_News extends Controller_Template{
 
 	public function action_index()
 	{
-		$data['news'] = Model_News::find('all');
+                $data['news'] = Model_News::find('all',array(
+                        "order_by" => array("created_at" => "desc")
+                        ));
+		
 		$this->template->title = "News";
 		$this->template->content = View::forge('news/index', $data);
 
@@ -71,10 +74,8 @@ class Controller_News extends Controller_Template{
                         
                     }else{
                         Session::set_flash('error', 'Attēls nav derīgs');
-                    };
-                    
-			
-		}
+                    }
+        }
                 
 
 
@@ -141,14 +142,15 @@ class Controller_News extends Controller_Template{
 
 		if ($news = Model_News::find($id))
 		{
+                        File::delete(DOCROOT.'/assets/img/news/'.$news->image);
 			$news->delete();
 
-			Session::set_flash('success', 'Deleted news #'.$id);
+			Session::set_flash('success', 'Izdzēsts jaunums #'.$id);
 		}
 
 		else
 		{
-			Session::set_flash('error', 'Could not delete news #'.$id);
+			Session::set_flash('error', 'Nevarēja izdzēst #'.$id);
 		}
 
 		Response::redirect('news');

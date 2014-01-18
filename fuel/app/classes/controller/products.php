@@ -139,14 +139,15 @@ class Controller_Products extends Controller_Template{
 
 		if ($product = Model_Product::find($id))
 		{
+                        File::delete(DOCROOT.'/assets/img/products/'.$product->image);
 			$product->delete();
 
-			Session::set_flash('success', 'Deleted product #'.$id);
+			Session::set_flash('success', 'Izdzēsts produkts #'.$id);
 		}
 
 		else
 		{
-			Session::set_flash('error', 'Could not delete product #'.$id);
+			Session::set_flash('error', 'Nevarēja izdzēst #'.$id);
 		}
 
 		Response::redirect('products');
