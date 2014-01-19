@@ -13,7 +13,7 @@
 			<th>&nbsp;</th>
 		</tr>
 	</thead>
-	<tbody>
+        <tbody id="prod">
 <?php foreach ($products as $item): ?>		<tr>
 
 			<td><?php echo $item->name; ?></td>
@@ -21,12 +21,13 @@
 			<td><?php echo $item->summary; ?></td>
 			<td><?php echo $item->price; ?></td>
                         <td><?php echo $item->author_id; ?></td>
-			<img src="/assets/img/products/<?php echo $item->image; ?>" alt="teksts">
+                        <td><img id="prod_img" src="/assets/img/products/<?php echo $item->image; ?>" alt="teksts"></td>
 			
 			<td>
 				<div class="btn-toolbar">
 					<div class="btn-group">
-						<?php echo Html::anchor('products/view/'.$item->id, '<i class="icon-eye-open"></i> View', array('class' => 'btn btn-small')); ?>						<?php echo Html::anchor('products/edit/'.$item->id, '<i class="icon-wrench"></i> Edit', array('class' => 'btn btn-small')); ?>						<?php echo Html::anchor('products/delete/'.$item->id, '<i class="icon-trash icon-white"></i> Delete', array('class' => 'btn btn-small btn-danger', 'onclick' => "return confirm('Are you sure?')")); ?>					</div>
+						<?php echo Html::anchor('products/view/'.$item->id, '<i class="icon-eye-open"></i> View', array('class' => 'btn btn-small')); ?><br>						
+                                                        <?php echo Html::anchor('products/delete/'.$item->id, '<i class="icon-trash icon-white"></i> Delete', array('class' => 'btn btn-small btn-danger', 'onclick' => "return confirm('Are you sure?')")); ?>					</div>
 				</div>
 
 			</td>

@@ -3,41 +3,61 @@
 <head>
 	<meta charset="utf-8">
 	<title><?php echo $title; ?></title>
-	<?php echo Asset::css('bootstrap.css'); ?>
-	<style>
-		body { margin: 40px; }
-	</style>
+        
+        <?php echo Asset::css('template.css'); ?>
+        
+        <?php echo Asset::js('jquery-2.0.3.js'); ?>
+        <?php echo Asset::js('jquery.roundabout.js'); ?>
+        <?php echo Asset::js('roundabout.js'); ?>
+        <?php echo Asset::js('jquery.event.drag-2.2.js'); ?>
+        <?php echo Asset::js('jquery.event.drop-2.2.js'); ?>
+        <?php echo Asset::js('jquery.roundabout-shapes.js'); ?>
+	
 </head>
 <body>
-    
-    
-    
-    <?php
-        if (isset($user_info))
-        {
-            echo $user_info;
-        }
-        else
-        {
-            if (Auth::instance()->check())
-            {
-                $link = array('Logged in as: '.Auth::instance()->get_screen_name(), Html::anchor('login/logout', 'Logout'));
-                echo Html::ul($link);
-            }
-            else
-            {
-                echo render('login/index');
-            }
-            
-        }
-    ?>
-    
-   
-    
-	<div class="container">
+    <div class="main">
+        <div class="header">
+            <div class="logo">
+                <h1><?php echo Html::anchor("news/index/", "Frezo.lv"); ?> <small>Iefrēzē savu Frezo</small></a></h1>
+            </div>
+            <div id="login">
+                <?php
+                    if (isset($user_info))
+                    {
+                        echo $user_info->group;
+                    }
+                    else
+                    {
+                        if (Auth::instance()->check())
+                        {
+                            $link = array('Logged in as: '.Auth::instance()->get_screen_name(), Html::anchor('login/logout', 'Logout'));
+                            echo Html::ul($link);
+                        }
+                        else
+                        {
+                            echo render('login/index');
+                        }
+                    }
+                    Request::forge('login/index')->execute();
+                ?>
+            </div>
+            <div class="menu_nav">
+                <ul>
+                    <li class="active"><?php echo Html::anchor("news/index/", "Sākums"); ?></li>
+                    <li><?php echo Html::anchor("news/index/", "Jaunumi"); ?></li>
+                    <li><?php echo Html::anchor("products/index/", "Katalogs"); ?></li>
+                    <li><?php echo Html::anchor("news/index/", "Par mums"); ?></li>
+                    <li><?php echo Html::anchor("news/index/", "Kontakti"); ?></li>
+                </ul>
+            </div>
+        </div>
+        
+        
+        
+        
+        <div class="container">
 		<div class="col-md-12">
-			<h1><?php echo $title; ?></h1>
-			<hr>
+			
 <?php if (Session::get_flash('success')): ?>
 			<div class="alert alert-success">
 				<strong>Success</strong>
@@ -66,5 +86,10 @@
 			</p>
 		</footer>
 	</div>
+        
+        
+        
+    </div>
+    
 </body>
 </html>

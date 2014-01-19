@@ -19,7 +19,6 @@ class Controller_Login extends Controller_Template
                     Session::set_flash("error", "Nepareizs lietotājvārds un/vai parole.");
                 }
             }
-
             $this->template->title = 'Autorizācija';
             $this->template->content = View::forge('login/index', $data);
             
@@ -28,7 +27,7 @@ class Controller_Login extends Controller_Template
 	{
 		$data["subnav"] = array('login'=> 'active' );
 		$this->template->title = 'Login &raquo; Login';
-		$this->template->content = View::forge('login/login', $data);
+		$this->template->content = View::forge('login/index', $data);
 	}
 
 	public function action_logout()  // izlogojas un pārmet uz galveno lapu
