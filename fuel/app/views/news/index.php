@@ -1,22 +1,37 @@
-<h2>Listing <span class='muted'>News</span></h2>
+<?php if ($products): ?>
+<ul id="roundabout">	
+<?php foreach ($products as $item): ?>		<tr>
+<li><img src="/assets/img/products/<?php echo $item->image; ?>" alt="teksts"></li>
+			
+<?php endforeach; ?>
+</ul>
+<?php else: ?>
+
+<?php endif; ?><p>
+
+
+
+
+
+
+<h2>Jaunumi</h2>
 <br>
 <?php if ($news): ?>
 <table class="table table-striped">
 	<thead>
 		<tr>
-			<th>Name</th>
-			<th>Summary</th>
-			<th>Message</th>
-			<th>Author id</th>
+                        <th></th>
+			<th></th>
+			<th></th>
+			<th></th>
 			<th>&nbsp;</th>
 		</tr>
 	</thead>
-	<tbody>
+	<tbody id="news">
 <?php foreach ($news as $item): ?>		<tr>
-                        <img src="/assets/img/news/<?php echo $item->image; ?>" alt="teksts">
-			<td><?php echo $item->name; ?></td>
-			<td><?php echo $item->summary; ?></td>
-			<td><?php echo $item->message; ?></td>
+                        <td class="news_img"><img src="/assets/img/news/<?php echo $item->image; ?>" alt="teksts"></td>
+			<td class="news_name"><?php echo $item->name; ?></td>
+			<td class="news_summary"><?php echo $item->summary; ?></td>
 			<td><?php echo $item->user->email; ?></td>
                         
 			<td>
