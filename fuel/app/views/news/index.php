@@ -1,7 +1,13 @@
 <?php if ($products): ?> <!-- attēli priekš bilžu rādītāja -->
 <ul id="roundabout">	
 <?php foreach ($products as $item): ?>		<tr>
-<li><img src="/assets/img/products/<?php echo $item->image; ?>" alt="teksts"></li>			
+<li><a href="/products/view/<?php echo $item->id ?>" >
+    <img src="/assets/img/products/<?php echo $item->image; ?>" alt="Produkti"></a>
+    <br />
+    <span class="product-list">
+        <?php echo $item->name; ?>, <?php echo $item->price; ?> &euro;
+    </span>
+</li>
 <?php endforeach; ?>
 </ul>
 <?php else: ?>
@@ -14,10 +20,15 @@
 
 <h2 id="cont_title">Jaunumi</h2>
 
-<p id="news_add">
-	<?php echo Html::anchor('news/create', 'Pievienot jaunu ziņu', array('class' => 'btn btn-success')); ?>
 
+<?php if (Auth::has_access("news.create")){ ?>
+
+<p id="news_add">
+    <?php echo Html::anchor('news/create', 'Pievienot jaunu ziņu', array('class' => 'btn btn-success')); ?>  
 </p>
+
+<?php } ?>
+
 
 <?php if ($news): ?>
 <div id="news">
@@ -31,16 +42,16 @@
                     <div class="news_info">
                         <ul>
                             <li><b>Pievienoja: </b><?php echo $item->user->email; ?></li>
-                            <li><b>Datums: </b> <?php echo $item->updated_at; ?></li>
+                            <li><b>Datums: </b> <?php echo Date::forge($item->created_at)->format("%m/%d/%Y %H:%M", true); ?></li>
                         </ul>
                     </div>
                     <div class="news_butt">
                         <ul>
                             <li><?php echo Html::anchor('news/view/'.$item->id, '<i class="icon-eye-open"></i> View', array('class' => 'btn btn-small')); ?></li>
                             
-                           
+                            <?php if (Auth::has_access("news.delete")){ ?>
                             <li><?php echo Html::anchor('news/delete/'.$item->id, '<i class="icon-trash icon-white"></i> Delete', array('class' => 'btn btn-small btn-danger', 'onclick' => "return confirm('Are you sure?')")); ?></li>					
-                        
+                            <?php } ?>
                         
                         </ul> 
                         
