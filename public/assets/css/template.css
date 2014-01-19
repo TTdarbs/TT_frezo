@@ -190,7 +190,7 @@ fieldset{
     bottom: 0px;
     left:0px;
 }
-.news_butt ul li{
+.news_butt ul li, #view_butt li{
     text-decoration: none;
     display: inline-block;
     height: 40px;
@@ -202,7 +202,7 @@ fieldset{
     border: 1px solid #666;
     border-radius: 5px;
 }
-#news_add{
+#news_add, #back{
     display: block;
     height: 40px;
     width: 150px;
@@ -215,16 +215,44 @@ fieldset{
     border-radius: 10px;
     margin-left:10px; 
 }
+#back{
+    width: 80px;
+}
 #cont_title{
     margin-left:10px; 
     font-size: 35px;
 }
 
-fieldset{
-    width: 100%;
+.form-group label{
+    font-size: 15px;
+    font-weight: bold;  
 }
-fieldset input, fieldset textarea{
-    width: 80%;
+#add_name input{
+    width: 300px;
+}
+#add_summary textarea{
+    width: 700px;
+    height: 100px;
+}
+#add_message textarea{
+    width: 700px;
+    height: 200px;
+}
+.form-group{
+    margin-bottom: 20px;
+}
+p{
+    margin-left: 10px;
 }
 
-
+#prod_img{
+    height: 100px;
+}
+#prod td{
+    height: 100px;
+    width: 120px;
+    border: 1px solid black;
+    border-bottom: 3px solid black;
+    text-align: center;
+    
+}
