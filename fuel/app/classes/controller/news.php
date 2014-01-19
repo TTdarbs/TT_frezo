@@ -6,6 +6,9 @@ class Controller_News extends Controller_Template{
                 $data['news'] = Model_News::find('all',array(
                         "order_by" => array("created_at" => "desc")
                         ));
+                $data['products'] = Model_Product::find('all',array(
+                        "order_by" => array("created_at" => "desc")
+                        ));
 		
 		$this->template->title = "News";
 		$this->template->content = View::forge('news/index', $data);
