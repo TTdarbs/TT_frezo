@@ -8,15 +8,15 @@
 
 		</div>
 		<div class="form-group">
-			<?php echo Form::label('Author id', 'author_id', array('class'=>'control-label')); ?>
+			<?php echo Form::hidden('Author id', 'author_id', array('class'=>'control-label')); ?>
 
-				<?php echo Form::input('author_id', Input::post('author_id', isset($comment) ? $comment->author_id : ''), array('class' => 'col-md-4 form-control', 'placeholder'=>'Author id')); ?>
+				<?php echo Form::hidden('author_id', Input::post('author_id', isset($comment) ? $comment->author_id : ''), array('class' => 'col-md-4 form-control', 'placeholder'=>'Author id')); ?>
 
 		</div>
 		<div class="form-group">
-			<?php echo Form::label('News id', 'news_id', array('class'=>'control-label')); ?>
+			<?php echo Form::hidden('News id', 'news_id', array('class'=>'control-label')); ?>
 
-				<?php echo Form::input('news_id', Input::post('news_id', isset($comment) ? $comment->news_id : ''), array('class' => 'col-md-4 form-control', 'placeholder'=>'News id')); ?>
+				<?php echo Form::hidden('news_id', Input::post('news_id', isset($comment) ? $comment->news_id : ''), array('class' => 'col-md-4 form-control', 'placeholder'=>'News id')); ?>
 
 		</div>
 		<div class="form-group">

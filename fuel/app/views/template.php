@@ -38,13 +38,16 @@
                         {
                             $link = array('Logged in as: '.Auth::instance()->get_screen_name(), Html::anchor('login/logout', 'Logout'));
                             echo Html::ul($link);
+                            
                         }
                         else
                         {
+                            Request::forge('login/index')->execute();
+                    
                             echo render('login/index');
                         }
                     }
-                    Request::forge('login/index')->execute();
+                    
                 ?>
             </div>
             <div class="menu_nav">

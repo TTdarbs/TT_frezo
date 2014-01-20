@@ -230,3 +230,160 @@ ERROR - 2014-01-20 22:26:16 --> Error - Property "comment" not found for Model_C
 WARNING - 2014-01-20 22:26:42 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
 WARNING - 2014-01-20 22:29:33 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
 WARNING - 2014-01-20 22:33:54 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 22:38:46 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 22:39:37 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 22:41:47 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 22:41:52 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 22:41:54 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 22:41:54 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 22:41:59 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 22:42:58 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 22:43:09 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 22:43:22 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 22:43:30 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 22:43:31 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 22:43:36 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 22:45:41 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 22:45:43 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 22:45:44 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 22:45:48 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 22:45:48 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 22:45:54 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 22:46:01 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 22:47:09 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 22:47:10 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 22:47:12 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 22:47:13 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 22:47:18 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 22:47:28 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 22:47:28 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 22:50:29 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 22:50:33 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 22:50:39 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 22:50:47 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 22:50:48 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 22:50:48 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 22:53:01 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+ERROR - 2014-01-20 22:53:01 --> Parsing Error - syntax error, unexpected '(', expecting variable (T_VARIABLE) or '$' in C:\wamp\www\TT_frezo\fuel\app\classes\controller\comments.php on line 46
+WARNING - 2014-01-20 22:53:49 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 22:54:05 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+ERROR - 2014-01-20 22:54:06 --> Runtime Recoverable error - Object of class Model_Comment could not be converted to string in C:\wamp\www\TT_frezo\fuel\app\classes\controller\comments.php on line 46
+WARNING - 2014-01-20 22:55:13 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 22:55:27 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+ERROR - 2014-01-20 22:55:27 --> Notice - Undefined property: Controller_Comments::$comment in C:\wamp\www\TT_frezo\fuel\app\classes\controller\comments.php on line 46
+WARNING - 2014-01-20 22:56:18 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 22:56:26 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+ERROR - 2014-01-20 22:56:26 --> Notice - Undefined property: Controller_Comments::$comments in C:\wamp\www\TT_frezo\fuel\app\classes\controller\comments.php on line 46
+WARNING - 2014-01-20 22:59:06 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+ERROR - 2014-01-20 22:59:07 --> Notice - Undefined variable: user in C:\wamp\www\TT_frezo\fuel\app\views\news\view.php on line 34
+WARNING - 2014-01-20 23:00:24 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:00:35 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+ERROR - 2014-01-20 23:00:35 --> Notice - Undefined variable: data in C:\wamp\www\TT_frezo\fuel\app\classes\controller\comments.php on line 46
+WARNING - 2014-01-20 23:03:04 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:03:09 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:03:10 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:03:13 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:03:13 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:03:16 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:03:28 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:03:32 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:03:46 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:03:47 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:03:47 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:04:22 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:04:29 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:04:58 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:05:01 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:05:02 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:05:05 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:05:06 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:05:08 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:05:09 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:05:12 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:05:13 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:05:15 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:05:15 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:05:17 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:05:18 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:05:20 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:05:21 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:05:24 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:05:24 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:05:25 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:05:29 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:05:37 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+ERROR - 2014-01-20 23:05:37 --> 23000 - SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'news_id' cannot be null with query: "INSERT INTO `comments` (`message`, `author_id`, `news_id`, `created_at`, `updated_at`) VALUES ('asdada', '1', null, 1390259137, 1390259137)" in C:\wamp\www\TT_frezo\fuel\core\classes\database\pdo\connection.php on line 234
+WARNING - 2014-01-20 23:08:31 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:08:40 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+ERROR - 2014-01-20 23:08:41 --> 23000 - SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'news_id' cannot be null with query: "INSERT INTO `comments` (`message`, `author_id`, `news_id`, `created_at`, `updated_at`) VALUES ('asdad', '1', null, 1390259321, 1390259321)" in C:\wamp\www\TT_frezo\fuel\core\classes\database\pdo\connection.php on line 234
+WARNING - 2014-01-20 23:13:34 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:14:28 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+ERROR - 2014-01-20 23:14:28 --> Notice - Undefined property: Controller_Comments::$comments in C:\wamp\www\TT_frezo\fuel\app\classes\controller\comments.php on line 29
+WARNING - 2014-01-20 23:14:37 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+ERROR - 2014-01-20 23:14:38 --> Notice - Undefined property: Controller_Comments::$comment in C:\wamp\www\TT_frezo\fuel\app\classes\controller\comments.php on line 29
+WARNING - 2014-01-20 23:16:33 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+ERROR - 2014-01-20 23:16:33 --> Notice - Undefined property: Controller_Comments::$user in C:\wamp\www\TT_frezo\fuel\app\classes\controller\comments.php on line 29
+WARNING - 2014-01-20 23:16:46 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+ERROR - 2014-01-20 23:16:47 --> Notice - Undefined property: Controller_Comments::$comment in C:\wamp\www\TT_frezo\fuel\app\classes\controller\comments.php on line 29
+WARNING - 2014-01-20 23:16:48 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+ERROR - 2014-01-20 23:16:49 --> Notice - Undefined property: Controller_Comments::$comment in C:\wamp\www\TT_frezo\fuel\app\classes\controller\comments.php on line 29
+WARNING - 2014-01-20 23:16:54 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+ERROR - 2014-01-20 23:16:55 --> Notice - Undefined property: Controller_Comments::$comments in C:\wamp\www\TT_frezo\fuel\app\classes\controller\comments.php on line 29
+WARNING - 2014-01-20 23:19:54 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:20:14 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:20:25 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:21:20 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:21:56 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+ERROR - 2014-01-20 23:21:56 --> 23000 - SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'news_id' cannot be null with query: "INSERT INTO `comments` (`message`, `author_id`, `news_id`, `created_at`, `updated_at`) VALUES ('asdaasda', '1', null, 1390260116, 1390260116)" in C:\wamp\www\TT_frezo\fuel\core\classes\database\pdo\connection.php on line 234
+WARNING - 2014-01-20 23:23:40 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+ERROR - 2014-01-20 23:23:41 --> Error - View variable is not set: news in C:\wamp\www\TT_frezo\fuel\core\classes\view.php on line 430
+WARNING - 2014-01-20 23:24:04 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+ERROR - 2014-01-20 23:24:05 --> Error - View variable is not set: comment in C:\wamp\www\TT_frezo\fuel\core\classes\view.php on line 430
+WARNING - 2014-01-20 23:24:11 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+ERROR - 2014-01-20 23:24:12 --> Error - View variable is not set: comments in C:\wamp\www\TT_frezo\fuel\core\classes\view.php on line 430
+WARNING - 2014-01-20 23:25:09 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:31:34 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:31:34 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:31:38 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:31:39 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:34:27 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+ERROR - 2014-01-20 23:34:28 --> Error - The requested view could not be found: comments/create/27/1 in C:\wamp\www\TT_frezo\fuel\core\classes\view.php on line 388
+WARNING - 2014-01-20 23:35:22 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:39:15 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:39:18 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:39:27 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+ERROR - 2014-01-20 23:39:27 --> Notice - Undefined variable: data in C:\wamp\www\TT_frezo\fuel\app\classes\controller\comments.php on line 47
+WARNING - 2014-01-20 23:39:47 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:39:50 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:39:55 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:39:56 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:40:00 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:40:02 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:40:03 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:40:06 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:40:09 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:40:16 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:40:16 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:40:24 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:40:28 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:40:31 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:40:36 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:40:39 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:40:47 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:40:48 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:41:05 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:41:10 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:41:10 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:41:18 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:41:19 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:41:22 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:41:29 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:41:36 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:41:37 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:42:16 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:42:19 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:42:21 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:42:50 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:42:54 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:42:55 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-01-20 23:43:01 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.

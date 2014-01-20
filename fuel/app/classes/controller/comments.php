@@ -24,25 +24,27 @@ class Controller_Comments extends Controller_Template{
 
 	}
 
-	public function action_create()
+	public function action_create($id = null)
 	{
+             
 		if (Input::method() == 'POST')
 		{
 			$val = Model_Comment::validate('create');
-			
+			$user = \Auth::get_user_id();
 			if ($val->run())
 			{
 				$comment = Model_Comment::forge(array(
 					'message' => Input::post('message'),
-					'author_id' => Input::post('author_id'),
-					'news_id' => Input::post('news_id'),
+					'author_id' => $user[1],
+                                        'news_id' => $id,
+					//'news_id' => Input::post('news_id'),
 				));
 
 				if ($comment and $comment->save())
 				{
 					Session::set_flash('success', 'Added comment #'.$comment->id.'.');
 
-					Response::redirect('comments');
+					Response::redirect('news/view/'. $id);
 				}
 
 				else

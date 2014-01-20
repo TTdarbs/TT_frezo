@@ -39,8 +39,6 @@ class Model_Comment extends Model
 	{
 		$val = Validation::forge($factory);
 		$val->add_field('message', 'Message', 'required');
-		$val->add_field('author_id', 'Author Id', 'required|valid_string[numeric]');
-		$val->add_field('news_id', 'News Id', 'required|valid_string[numeric]');
 
 		return $val;
 	}
