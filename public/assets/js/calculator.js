@@ -7,7 +7,7 @@
           var dailyPrice = +$(this).closest(".product").data("daily-price");
           $total = $total + (products * dailyPrice);
         });
-        $("#total").text($total);
+        $("#total").text($total.toFixed(2));
         //$total = 0;
      });
 });

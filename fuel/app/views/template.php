@@ -23,6 +23,11 @@
             </div>
             <div id="login">
                 <?php
+		    echo Html::anchor("login/setlang/lv", "LV");
+		    echo " | ";
+		    echo Html::anchor("login/setlang/en", "EN");
+		?>
+                <?php
                     if (isset($user_info))
                     {
                         echo $user_info->group;

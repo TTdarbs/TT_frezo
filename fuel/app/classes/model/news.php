@@ -31,6 +31,15 @@ class Model_News extends Model
 			'model_to' => 'Model_User',
 			'key_to' => 'id')
         );
+            protected static $_has_many = array(
+
+        'comments' => array(
+	    'key_from' => 'id',
+	    'model_to' => 'Model_Comment',
+	    'key_to' => 'news_id',
+	    'cascade_save' => true,
+	    'cascade_delete' => false)
+    );
         
 	public static function validate($factory)
 	{

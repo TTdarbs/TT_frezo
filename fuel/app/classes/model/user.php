@@ -24,7 +24,13 @@ class Model_User extends \Orm\Model
                 'cascade_delete' => false),
             'products' => array(
                 'key_from' => 'id',
-                'model_to' => 'Model_Products',
+                'model_to' => 'Model_Product',
+                'key_to' => 'author_id',
+                'cascade_save' => true,
+                'cascade_delete' => false),
+            'comments' => array(
+                'key_from' => 'id',
+                'model_to' => 'Model_Comment',
                 'key_to' => 'author_id',
                 'cascade_save' => true,
                 'cascade_delete' => false),

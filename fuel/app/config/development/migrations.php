@@ -11,6 +11,7 @@ return array(
 				2 => '003_user_data',
 				3 => '004_create_products',
 				4 => '005_create_abouts',
+				5 => '006_create_comments',
 			),
 		),
 		'module' => 
