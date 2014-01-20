@@ -134,6 +134,9 @@ fieldset{
     height: 100%;  
 }
 
+#roundabout .product-list {
+    font-weight: bold;
+}
 
 .news_article{
     position: relative;

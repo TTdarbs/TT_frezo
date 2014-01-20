@@ -142,21 +142,25 @@ class Controller_News extends Controller_Template{
 	public function action_delete($id = null)
 	{
 		is_null($id) and Response::redirect('news');
+                if (Auth::has_access("news.delete")){
+                    if ($news = Model_News::find($id))
+                    {
+                            File::delete(DOCROOT.'/assets/img/news/'.$news->image);
+                            $news->delete();
 
-		if ($news = Model_News::find($id))
-		{
-                        File::delete(DOCROOT.'/assets/img/news/'.$news->image);
-			$news->delete();
+                            Session::set_flash('success', 'Izdzēsts jaunums #'.$id);
+                    }
 
-			Session::set_flash('success', 'Izdzēsts jaunums #'.$id);
-		}
+                    else
+                    {
+                            Session::set_flash('error', 'Nevarēja izdzēst #'.$id);
+                    }
 
-		else
-		{
-			Session::set_flash('error', 'Nevarēja izdzēst #'.$id);
-		}
-
-		Response::redirect('news');
+                    Response::redirect('news');
+                }else{
+                    Session::set_flash('error', "Tu nedrīksti to darīt!");
+                    Response::redirect('news');
+                }
 
 	}
 

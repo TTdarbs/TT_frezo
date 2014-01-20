@@ -136,21 +136,25 @@ class Controller_Products extends Controller_Template{
 	public function action_delete($id = null)
 	{
 		is_null($id) and Response::redirect('products');
+                if (Auth::has_access("products.delete")){
+                    if ($product = Model_Product::find($id))
+                    {
+                            File::delete(DOCROOT.'/assets/img/products/'.$product->image);
+                            $product->delete();
 
-		if ($product = Model_Product::find($id))
-		{
-                        File::delete(DOCROOT.'/assets/img/products/'.$product->image);
-			$product->delete();
+                            Session::set_flash('success', 'Izdzēsts produkts #'.$id);
+                    }
 
-			Session::set_flash('success', 'Izdzēsts produkts #'.$id);
-		}
+                    else
+                    {
+                            Session::set_flash('error', 'Nevarēja izdzēst #'.$id);
+                    }
 
-		else
-		{
-			Session::set_flash('error', 'Nevarēja izdzēst #'.$id);
-		}
-
-		Response::redirect('products');
+                    Response::redirect('products');
+                }else{
+                    Session::set_flash('error', "Tu nedrīksti to darīt!");
+                    Response::redirect('products');
+                }
 
 	}
 

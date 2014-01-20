@@ -41,7 +41,9 @@ return array(
                 	"products"
 			    =>array("read"),
                         "comment"
-			    =>array("create", "read", "update","delete"),),
+			    =>array("create", "read", "update","delete"),
+                        "about"
+			    =>array("read"),),
 	    "admin" => array(
 			"news"
 			    =>array("create", "read", "edit","update","delete"),
@@ -49,6 +51,8 @@ return array(
 			    =>array("create", "read", "update","delete", "allrights"),
 			"products"
 			    =>array("read","create", "update","delete"),
+                        "about"
+			    =>array("read","create", "edit", "update","delete"),
                 ),
 		/**
 		 * Examples

@@ -10,6 +10,7 @@ return array(
 				1 => '002_create_news',
 				2 => '003_user_data',
 				3 => '004_create_products',
+				4 => '005_create_abouts',
 			),
 		),
 		'module' => 

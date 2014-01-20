@@ -43,10 +43,10 @@
             </div>
             <div class="menu_nav">
                 <ul>
-                    <li class="active"><?php echo Html::anchor("news/index/", "Sākums"); ?></li>
-                    <li><?php echo Html::anchor("news/index/", "Jaunumi"); ?></li>
-                    <li><?php echo Html::anchor("products/index/", "Katalogs"); ?></li>
-                    <li><?php echo Html::anchor("news/index/", "Par mums"); ?></li>
+                    <li><?php echo Html::anchor("news/", "Kalkulators"); ?></li>
+                    <li class="active"><?php echo Html::anchor("news/", "Jaunumi"); ?></li>
+                    <li><?php echo Html::anchor("products/", "Katalogs"); ?></li>
+                    <li><?php echo Html::anchor("about/", "Par mums"); ?></li>
                     <li><?php echo Html::anchor("news/index/", "Kontakti"); ?></li>
                 </ul>
             </div>
