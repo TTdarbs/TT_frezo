@@ -10,5 +10,5 @@
 	<strong>News id:</strong>
 	<?php echo $comment->news_id; ?></p>
 
-<?php echo Html::anchor('comments/edit/'.$comment->id, 'Edit'); ?> |
-<?php echo Html::anchor('comments', 'Back'); ?>
+<?php echo Html::anchor('comments/edit/'.$comment->id, __("EDIT")); ?> |
+<?php echo Html::anchor('comments', __("BACK")); ?>

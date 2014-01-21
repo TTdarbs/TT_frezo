@@ -1,6 +1,19 @@
 <?php
-class Controller_News extends Controller_Template{
+class Controller_News extends Controller_Public{
+        private $_auth;
+        private $_user_id;
 
+        public function before() {
+            parent::before();
+
+            $this->_auth = Auth::instance();
+            $userids = $this->_auth->get_user_id();
+            $this->_user_id = $userids[1];
+
+            //loads messages for event controller
+            Lang::load("main");
+
+        }
 	public function action_index()
 	{
                 $data['news'] = Model_News::find('all',array(

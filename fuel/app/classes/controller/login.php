@@ -1,6 +1,6 @@
 <?php
 
-class Controller_Login extends Controller_Template
+class Controller_Login extends Controller_Public
 {
         public function action_index()
         {
@@ -22,6 +22,15 @@ class Controller_Login extends Controller_Template
             $this->template->title = 'Autorizācija';
             $this->template->content = View::forge('login/index', $data);
             
+        }
+        
+        public function action_setlang($lang=null){
+	//assumes there is an authenticated user
+            if ($lang!=null){
+                $auth = Auth::instance();
+                $auth->update_user(array("language"=>$lang));
+                Response::redirect("/");
+            }
         }
 	public function action_login()
 	{

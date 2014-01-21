@@ -5,7 +5,7 @@
 
 <?php echo render('news/_form'); ?>
 
-<p id="back"><?php echo Html::anchor('news', 'Atpakaļ'); ?></p>
+<p id="back"><?php echo Html::anchor('news', __("BACK")); ?></p>
 
 <?php }else{
         Response::redirect('/');

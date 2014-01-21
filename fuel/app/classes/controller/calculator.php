@@ -1,6 +1,6 @@
 <?php
 
-class Controller_Calculator extends Controller_Template{
+class Controller_Calculator extends Controller_Public{
     public function action_index(){
             $data['products'] = Model_Product::find('all');
             $this->template->title = "Kalkulators";

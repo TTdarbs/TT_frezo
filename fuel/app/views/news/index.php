@@ -20,11 +20,10 @@
 
 <h2 id="cont_title">Jaunumi</h2>
 
-
 <?php if (Auth::has_access("news.create")){ ?>
 
 <p id="news_add">
-    <?php echo Html::anchor('news/create', 'Pievienot jaunu ziņu', array('class' => 'btn btn-success')); ?>  
+    <?php echo Html::anchor('news/create', __("ADD_NEW MESSAGE"), array('class' => 'btn btn-success')); ?>  
 </p>
 
 <?php } ?>
@@ -47,10 +46,10 @@
                     </div>
                     <div class="news_butt">
                         <ul>
-                            <li><?php echo Html::anchor('news/view/'.$item->id, '<i class="icon-eye-open"></i> View', array('class' => 'btn btn-small')); ?></li>
+                            <li><?php echo Html::anchor('news/view/'.$item->id, __("VIEW"), array('class' => 'btn btn-small')); ?></li>
                             
                             <?php if (Auth::has_access("news.delete")){ ?>
-                            <li><?php echo Html::anchor('news/delete/'.$item->id, '<i class="icon-trash icon-white"></i> Delete', array('class' => 'btn btn-small btn-danger', 'onclick' => "return confirm('Are you sure?')")); ?></li>					
+                            <li><?php echo Html::anchor('news/delete/'.$item->id, __("DELETE"), array('class' => 'btn btn-small btn-danger', 'onclick' => "return confirm('Are you sure?')")); ?></li>					
                             <?php } ?>
                         
                         </ul> 

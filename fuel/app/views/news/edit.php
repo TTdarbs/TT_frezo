@@ -6,10 +6,10 @@
 <?php echo render('news/_form'); ?>
 
 <p>
-	<?php echo Html::anchor('news/view/'.$news->id, 'View'); ?>
+	<?php echo Html::anchor('news/view/'.$news->id, __("VIEW")); ?>
 </p>
 	
-<p> <?php echo Html::anchor('news', 'Atpakaļ'); ?></p>
+<p> <?php echo Html::anchor('news', __("BACK")); ?></p>
 
 <?php }else{
         Response::redirect('/');

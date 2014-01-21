@@ -2,21 +2,21 @@
                             'enctype' => 'multipart/form-data')); ?>
 	<fieldset>
 		<div class="form-group">
-			<?php echo Form::label('Name', 'name', array('class'=>'control-label')); ?>
+			<?php echo Form::label(__("NAME"), 'name', array('class'=>'control-label')); ?>
 
-				<?php echo Form::input('name', Input::post('name', isset($product) ? $product->name : ''), array('class' => 'col-md-4 form-control', 'placeholder'=>'Name')); ?>
-
-		</div>
-		<div class="form-group">
-			<?php echo Form::label('Summary', 'summary', array('class'=>'control-label')); ?>
-
-				<?php echo Form::textarea('summary', Input::post('summary', isset($product) ? $product->summary : ''), array('class' => 'col-md-8 form-control', 'rows' => 8, 'placeholder'=>'Summary')); ?>
+				<?php echo Form::input('name', Input::post('name', isset($product) ? $product->name : ''), array('class' => 'col-md-4 form-control', 'placeholder'=>__("NAME"))); ?>
 
 		</div>
 		<div class="form-group">
-			<?php echo Form::label('Price', 'price', array('class'=>'control-label')); ?>
+			<?php echo Form::label(__("SUMMARY"), 'summary', array('class'=>'control-label')); ?>
 
-				<?php echo Form::input('price', Input::post('price', isset($product) ? $product->price : ''), array('class' => 'col-md-4 form-control', 'placeholder'=>'Price')); ?>
+				<?php echo Form::textarea('summary', Input::post('summary', isset($product) ? $product->summary : ''), array('class' => 'col-md-8 form-control', 'rows' => 8, 'placeholder'=>__("SUMMARY"))); ?>
+
+		</div>
+		<div class="form-group">
+			<?php echo Form::label(__("PRICE"), 'price', array('class'=>'control-label')); ?>
+
+				<?php echo Form::input('price', Input::post('price', isset($product) ? $product->price : ''), array('class' => 'col-md-4 form-control', 'placeholder'=>__("PRICE"))); ?>
 
 		</div>
                 

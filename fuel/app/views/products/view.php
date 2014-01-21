@@ -16,5 +16,5 @@
 	<strong>Author id:</strong>
 	<?php echo $product->author_id; ?></p>
 
-<?php echo Html::anchor('products/edit/'.$product->id, 'Edit'); ?> |
-<?php echo Html::anchor('products', 'Back'); ?>
+<?php echo Html::anchor('products/edit/'.$product->id, __("EDIT")); ?> |
+<?php echo Html::anchor('products', __("BACK")); ?>

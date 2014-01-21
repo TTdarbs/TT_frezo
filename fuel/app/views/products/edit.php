@@ -6,10 +6,10 @@
 <?php echo render('products/_form'); ?>
 
 <p>
-    <?php echo Html::anchor('products/view/'.$product->id, 'View'); ?>
+    <?php echo Html::anchor('products/view/'.$product->id, __("VIEW")); ?>
 </p>
 
-<p> <?php echo Html::anchor('products', 'Atpakaļ'); ?></p>
+<p> <?php echo Html::anchor('products', __("BACK")); ?></p>
 
 <?php }else{
         Response::redirect('/');

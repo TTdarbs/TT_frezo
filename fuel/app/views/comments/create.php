@@ -4,4 +4,4 @@
 <?php echo render('comments/_form'); ?>
 
 
-<p><?php echo Html::anchor('comments', 'Back'); ?></p>
+<p><?php echo Html::anchor('comments', __("BACK")); ?></p>

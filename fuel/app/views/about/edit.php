@@ -5,8 +5,8 @@
 
 <?php echo render('about/_form'); ?>
 <p>
-	<?php echo Html::anchor('about/view/'.$about->id, 'View'); ?> |
-	<?php echo Html::anchor('about', 'Atpakaļ'); ?>
+	<?php echo Html::anchor('about/view/'.$about->id, __("VIEW")); ?> |
+	<?php echo Html::anchor('about', __("BACK")); ?>
 </p>
 
 

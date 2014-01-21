@@ -19,5 +19,5 @@
 	<strong>Desc vision:</strong>
 	<?php echo $about->desc_vision; ?></p>
 
-<?php echo Html::anchor('about/edit/'.$about->id, 'Edit'); ?> |
-<?php echo Html::anchor('about', 'Back'); ?>
+<?php echo Html::anchor('about/edit/'.$about->id, __("EDIT")); ?> |
+<?php echo Html::anchor('about', __("BACK")); ?>

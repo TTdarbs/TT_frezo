@@ -3,5 +3,5 @@
 
 <?php echo render('comments/_form'); ?>
 <p>
-	<?php echo Html::anchor('comments/view/'.$comment->id, 'View'); ?> |
-	<?php echo Html::anchor('comments', 'Back'); ?></p>
+	<?php echo Html::anchor('comments/view/'.$comment->id, __("VIEW")); ?> |
+	<?php echo Html::anchor('comments', __("BACK")); ?></p>

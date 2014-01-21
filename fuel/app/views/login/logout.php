@@ -1,2 +1,2 @@
 
-<p>Logut</p>
+<p>Logout</p>
