@@ -34,3 +34,4 @@
 	<?php echo Html::anchor('comments/create', 'Add new Comment', array('class' => 'btn btn-success')); ?>
 
 </p>
+<input id="menu_id" value="1">

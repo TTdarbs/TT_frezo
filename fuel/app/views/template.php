@@ -13,6 +13,7 @@
         <?php echo Asset::js('jquery.event.drop-2.2.js'); ?>
         <?php echo Asset::js('jquery.roundabout-shapes.js'); ?>
          <?php echo Asset::js('calculator.js'); ?>
+        <?php echo Asset::js('menu.js'); ?>
 	
 </head>
 <body>
@@ -52,11 +53,11 @@
             </div>
             <div class="menu_nav">
                 <ul>
-                    <li><?php echo Html::anchor("calculator/", "Kalkulators"); ?></li>
-                    <li class="active"><?php echo Html::anchor("news/", "Jaunumi"); ?></li>
-                    <li><?php echo Html::anchor("products/", "Katalogs"); ?></li>
-                    <li><?php echo Html::anchor("about/", "Par mums"); ?></li>
-                    <li><?php echo Html::anchor("news/index/", "Kontakti"); ?></li>
+                    <li id="b1"><?php echo Html::anchor("calculator/", "Kalkulators"); ?></li>
+                    <li id="b2"><?php echo Html::anchor("news/", "Jaunumi"); ?></li>
+                    <li id="b3"><?php echo Html::anchor("products/", "Katalogs"); ?></li>
+                    <li id="b4"><?php echo Html::anchor("about/", "Par mums"); ?></li>
+                    <li id="b5"><?php echo Html::anchor("news/index/", "Kontakti"); ?></li>
                 </ul>
             </div>
         </div>

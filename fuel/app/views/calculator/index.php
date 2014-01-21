@@ -8,4 +8,4 @@
     </p>
 <?php endforeach; ?>
  <p>Kopā: <span id="total">0</span>&euro;</p>
- 
+ <input id="menu_id" value="1">

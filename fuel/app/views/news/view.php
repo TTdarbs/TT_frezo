@@ -1,11 +1,17 @@
 <h2 id="cont_title"><?php echo $news->name; ?></h2>
 
-<p>	<?php echo $news->message; ?></p>
-<p>
-	<strong>Autors:</strong>
-	<?php echo $news->user->email; ?></p>
+<div id="news_view">
+    <img id="news_view_img" src="/assets/img/news/<?php echo $news->image; ?>">
+    <p>	<?php echo $news->message; ?></p>
+    <p>
+            <strong>Autors:</strong>
+            <?php echo $news->user->email; ?></p>
+</div>
+
 <ul id="view_butt">
-    <li><?php echo Html::anchor('news/edit/'.$news->id, 'Rediģēt'); ?></li> 
+    <?php if(Auth::has_access("comment.allrights")):?>
+        <li><?php echo Html::anchor('news/edit/'.$news->id, 'Rediģēt'); ?></li> 
+    <?php endif; ?>
     <li><?php echo Html::anchor('news', 'Atpakaļ'); ?></li>
 </ul>
 
@@ -14,7 +20,7 @@
     
     $user = \Auth::get_user_id();
         ?>
-<?php if (Auth::has_access("comment.create")): ?>
+<?php if (Auth::has_access("news.create")): ?>
     
     <h3><?php echo Html::anchor('comments/create/'.$news->id,'Pievienot komentāru!'); ?></h3>
 <?php endif; ?>
@@ -32,3 +38,4 @@
         <?php echo Html::anchor('comments/delete/'.$comment->id, 'Delete', array('onclick' => "return confirm('Are you sure?')")); ?>
      <?php endif; ?>
 <?php   endforeach ?>
+<input id="menu_id" value="2">

@@ -18,6 +18,9 @@
 <p>
 	<strong>Desc vision:</strong>
 	<?php echo $about->desc_vision; ?></p>
+<?php if(Auth::has_access("about.create")):?>
+    <?php echo Html::anchor('about/edit/'.$about->id, 'Edit'); ?> |
+<?php endif; ?>
 
-<?php echo Html::anchor('about/edit/'.$about->id, 'Edit'); ?> |
 <?php echo Html::anchor('about', 'Back'); ?>
+<input id="menu_id" value="4">

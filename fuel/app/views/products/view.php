@@ -15,6 +15,8 @@
 <p>
 	<strong>Author id:</strong>
 	<?php echo $product->author_id; ?></p>
-
-<?php echo Html::anchor('products/edit/'.$product->id, 'Edit'); ?> |
+<?php if(Auth::has_access("products.create")):?>
+    <?php echo Html::anchor('products/edit/'.$product->id, 'Edit'); ?> |
+<?php endif; ?>
 <?php echo Html::anchor('products', 'Back'); ?>
+<input id="menu_id" value="3">

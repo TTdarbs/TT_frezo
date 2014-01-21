@@ -13,7 +13,7 @@ body {
 
 .menu_nav{
     margin:0;
-    padding:0;
+    padding:0;   
 }
 
 .header {
@@ -86,10 +86,19 @@ fieldset{
 .menu_nav ul {
     list-style:none;
     height:40px;
-    float:left;
+    float:right;
     background-color: darkolivegreen;
+    border-top-left-radius:75px;
 }
 .menu_nav ul li {
+    margin:0;
+    padding:0 8px;
+    float:left;
+}
+#b0{
+    border: 3px solid black;
+}
+.menu_nav ul li:hover {
     margin:0;
     padding:0 8px;
     float:left;
@@ -140,7 +149,7 @@ fieldset{
 
 .news_article{
     position: relative;
-    width: 800px;
+    width: 100%;
     height: 300px;
     background-color: #ced4dd;
     margin-bottom: 2px;
@@ -218,6 +227,19 @@ fieldset{
     border-radius: 10px;
     margin-left:10px; 
 }
+
+
+#news_view{
+    width: 100%;
+    position: relative;
+}
+#news_view_img{
+    position: absolute;
+    right: 20px;
+}
+#news_view p{
+    width: 60%;
+}
 #back{
     width: 80px;
 }
@@ -257,5 +279,11 @@ p{
     border: 1px solid black;
     border-bottom: 3px solid black;
     text-align: center;
-    
+}
+#menu_id{
+    display: none;
+}
+.bmenu{
+    background-color: green;
+    border: 1px solid black;
 }

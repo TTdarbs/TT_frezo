@@ -64,3 +64,5 @@
 <p>No News.</p>
 
 <?php endif; ?>
+
+<input id="menu_id" value="2">

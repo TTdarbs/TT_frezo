@@ -25,7 +25,11 @@
 			<td>
 				<div class="btn-toolbar">
 					<div class="btn-group">
-						<?php echo Html::anchor('about/view/'.$item->id, '<i class="icon-eye-open"></i> View', array('class' => 'btn btn-small')); ?>						<?php echo Html::anchor('about/edit/'.$item->id, '<i class="icon-wrench"></i> Edit', array('class' => 'btn btn-small')); ?>						<?php echo Html::anchor('about/delete/'.$item->id, '<i class="icon-trash icon-white"></i> Delete', array('class' => 'btn btn-small btn-danger', 'onclick' => "return confirm('Are you sure?')")); ?>					</div>
+						<?php echo Html::anchor('about/view/'.$item->id, '<i class="icon-eye-open"></i> View', array('class' => 'btn btn-small')); ?>
+                                            <?php if(Auth::has_access("about.create")):?>
+                                                <?php echo Html::anchor('about/edit/'.$item->id, '<i class="icon-wrench"></i> Edit', array('class' => 'btn btn-small')); ?>						
+                                                <?php echo Html::anchor('about/delete/'.$item->id, '<i class="icon-trash icon-white"></i> Delete', array('class' => 'btn btn-small btn-danger', 'onclick' => "return confirm('Are you sure?')")); ?>					</div>
+                                            <?php endif; ?>       
 				</div>
 
 			</td>
@@ -37,6 +41,8 @@
 <p>No Abouts.</p>
 
 <?php endif; ?><p>
+    <?php if(Auth::has_access("about.create")):?>
 	<?php echo Html::anchor('about/create', 'Add new About', array('class' => 'btn btn-success')); ?>
-
+    <?php endif; ?> 
 </p>
+<input id="menu_id" value="4">

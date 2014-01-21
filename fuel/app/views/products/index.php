@@ -26,8 +26,11 @@
 			<td>
 				<div class="btn-toolbar">
 					<div class="btn-group">
-						<?php echo Html::anchor('products/view/'.$item->id, '<i class="icon-eye-open"></i> View', array('class' => 'btn btn-small')); ?><br>						
-                                                        <?php echo Html::anchor('products/delete/'.$item->id, '<i class="icon-trash icon-white"></i> Delete', array('class' => 'btn btn-small btn-danger', 'onclick' => "return confirm('Are you sure?')")); ?>					</div>
+						<?php echo Html::anchor('products/view/'.$item->id, '<i class="icon-eye-open"></i> View', array('class' => 'btn btn-small')); ?><br>	
+                                                <?php if(Auth::has_access("products.create")):?>
+                                                      <?php echo Html::anchor('products/delete/'.$item->id, '<i class="icon-trash icon-white"></i> Delete', array('class' => 'btn btn-small btn-danger', 'onclick' => "return confirm('Are you sure?')")); ?></div>	
+                                                <?php endif; ?>
+                                                        				
 				</div>
 
 			</td>
@@ -38,7 +41,12 @@
 <?php else: ?>
 <p>No Products.</p>
 
-<?php endif; ?><p>
-	<?php echo Html::anchor('products/create', 'Add new Product', array('class' => 'btn btn-success')); ?>
+<?php endif; ?>
+<?php if(Auth::has_access("products.create")):?>
+    <p>
+            <?php echo Html::anchor('products/create', 'Add new Product', array('class' => 'btn btn-success')); ?>
 
-</p>
+    </p>
+<?php endif; ?>
+
+<input id="menu_id" value="3">
